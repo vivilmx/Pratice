@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml-transitional.dtd">
+<html xmins="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type"contenr="text/html";charset="utf-8">
+<link rel="stylesheet" type="text/css" href="23.css">
+</head>
+<body>
+ <div class="top"></div>
+ <form action="regist.php" method="post">
+		<input type="text" name="name" placeholder="请输入账号" required="required"><br>
+		<input type="password" name="password" placeholder="请输入密码" required="required"><br>
+		<input type="password" name="re_password" placeholder="请再次输入密码" required="required"><br>		
+		<input type="text" name="nickname" placeholder="请输入你想要的昵称" required="required"><br>
+		<input type="text" name="yzm_code" placeholder="请输入验证码"/><br>
+		<img src="../gd.php" id="yzm_code" name="yzm_code"  onclick="this.src='../gd.php?'+new Date().getTime();"/>点击图片更换验证码<br>
+		<input type="submit" value="注册">
+	</form>
+ </body>
+ </html>
