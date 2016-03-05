@@ -173,8 +173,30 @@
 			<h3><?php echo $row['Name']; ?></h3>
 			</a>
 		</div>
+
 	
 	<?php endforeach ?>
     </div>
+<?php 
+	
+	$res = $dbh->query('SELECT * FROM image WHERE type = "动漫"');
+	$res->setFetchMode(PDO::FETCH_ASSOC);
+	while($row=$res->fetch()){
+	$rows[]=$row;
+	}
+?>
+<div class="dongm">
+<h1>动漫</h1> <br>
+	<?php foreach ($rows as $row) :?>
+	
+		<div class="videoPHOTO">
+			<a href="video/play.php?videoName=<?php echo $row['videoName'];?>&imageName=<?php echo $row['ImageName']?>&name=<?php echo $row['Name'];?>" target="_blank"
+			><img src="jpg/<?php echo $row['ImageName']; ?>" class="img">
+			<h3><?php echo $row['Name']; ?></h3>
+			</a>
+		</div>
+
+	
+	<?php endforeach ?></div>
 </body>
 </html>
