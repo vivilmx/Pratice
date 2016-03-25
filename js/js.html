@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml-transitional.dtd">
+<html xmins="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type"contenr="text/html";charset="utf-8">
+<style type="text/css">
+	table {
+		width: 300px;
+		height: 300px;
+		border:solid 1px #000;
+	}
+	td {
+		border:solid 1px #000;
+	}
+</style>
+</head>
+<body>
+<table>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<script type="text/javascript">
+	var rounds=document.querySelectorAll("td");
+	var colors = ["red","blue","green","pink","brown","golden","purple","orange","gray","yellow","#fff665","#ecec33","#cc5678","#aa3456","#bb0098","#dd5642"];
+	var i;
+	colors.forEach(function(color,i){
+		rounds[i].addEventListener("click",function(){
+ 		rounds[i].style.background=color;})
+	})
+
+	
+
+	
+</script>
+</body>
+</html>
