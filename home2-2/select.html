@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml-transitional.dtd">
+<html xmins="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type"contenr="text/html" charset="utf-8">
+<style type="text/css">
+	ul {
+		width: 210px;
+		height: 40px;
+		margin-top: 50px;
+		margin-left: 30px;
+		padding: 0;
+	}
+	ul > li {
+		float: left;
+		width: 60px;
+		height: 40px;
+        text-align: center;
+        margin-right: 5px;
+        line-height: 40px;
+        list-style: none;
+        color: #645B88;
+        background-color: #fff;
+	}
+	ul > li:hover {
+		background-color: #54506B;
+		color: #fff;
+	}
+	ul > li > div {
+		width: 600px;
+		height: 300px;
+		position: absolute;
+		left: 38px;
+		top: 90px;
+	}
+	#colorA {
+		display: none;background-color: #54506B;}
+	#colorB {
+		display: none;background-color: #FFF;}
+    #colorC {
+    	display: none;background-color: #54506B;}
+
+</style>
+</head>
+<body>
+<ul>
+	<li>选项1<div id="colorA"></div></li>
+	<li>选项2<div id="colorB"></div></li>
+	<li>选项3<div id="colorC"></div></li>
+</ul>
+<script type="text/javascript">
+    var lis=document.querySelectorAll("li");
+	var seleceA=document.querySelector("#colorA");
+	var seleceB=document.querySelector("#colorB");
+	var seleceC=document.querySelector("#colorC");
+	lis[0].addEventListener("click",function(){
+		seleceA.style.display="inline";
+ 		})
+	lis[1].addEventListener("click",function(){
+ 		seleceB.style.display="inline";})
+	lis[2].addEventListener("click",function(){
+ 		seleceC.style.display="inline";})
+    
+	
+
+	
+</script>
+	
+</body>
+</html>

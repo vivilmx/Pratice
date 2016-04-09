@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml-transitional.dtd">
+<html xmins="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type"contenr="text/html" charset="utf-8">
+<style type="text/css">
+	#but {
+		width: 80px;
+		height: 20px;
+	}
+</style>
+</head>
+<body>
+	<ul type="disc">
+		<li>一环</li>
+		<li>二环</li>
+		<li>三环</li>
+		<li>四环</li>
+		<li>五环</li>
+	</ul>
+	<form>
+		<input type="button" id="but" value="click on me"></input>
+	</form>
+	<script type="text/javascript">
+		var lists = document.querySelectorAll("li");
+		var arr = Array.prototype.slice.call(lists);
+		function two(){
+			var  buttonA=document.querySelector("#but");
+			var ss = arguments;
+			buttonA.addEventListener("click",function (){
+   				ss[0].style.color="blue";
+   				ss[1].style.color="blue";
+ 		    })
+		}
+		two(arr[1],arr[2]);
+	</script>
+</body>
+</html>
