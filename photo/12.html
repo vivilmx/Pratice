@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml-transitional.dtd">
+<html xmins="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type"contenr="text/html" charset="utf-8"> 
+ </head> 
+ <body> 
+  <img id = "img" src = "1.jpg" width="300px" /> 
+  <script type="text/javascript">
+  //function change(){
+   var curIndex = 0; 
+   var arr = new Array("1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"); 
+  setInterval(changeImg,2000); 
+  function changeImg() { 
+   var obj = document.getElementById("img"); 
+   if (curIndex == arr.length-1) { 
+    curIndex = 0; 
+   } else { 
+    curIndex += 1; 
+     } 
+   obj.src = arr[curIndex]; 
+  } 
+  //}
+ 
+    
+  </script>
+ </body> 
+</html> 
